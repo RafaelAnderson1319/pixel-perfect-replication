@@ -17,7 +17,7 @@ import workDashboard from "@/assets/work-dashboard.jpg";
 import workSaas from "@/assets/work-saas.jpg";
 import { ArrowCircle, Reveal, SectionHeading } from "./shared";
 
-/* ---------------- About ---------------- */
+/* ---------------- Sobre ---------------- */
 
 const STATS = [
   { icon: Award, value: "5+", label: "Anos de experiência" },
@@ -53,9 +53,9 @@ export function About() {
           </div>
           <div>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              I&apos;m a digital product designer with 5+ years of experience turning complex
-              problems into simple, intuitive and engaging experiences. I believe in user-centered
-              design, clean aesthetics and thoughtful details.
+              Sou designer de produto digital com mais de 5 anos de experiência transformando problemas complexos
+              em experiências simples, intuitivas e envolventes. Acredito em design centrado no usuário,
+              estética limpa e detalhes pensados com cuidado.
             </p>
             <a
               href="#contact"
@@ -70,7 +70,7 @@ export function About() {
   );
 }
 
-/* ---------------- Services ---------------- */
+/* ---------------- Serviços ---------------- */
 
 const SERVICES = [
   {
@@ -125,7 +125,7 @@ export function Services() {
   );
 }
 
-/* ---------------- Tools & Skills ---------------- */
+/* ---------------- Ferramentas e habilidades ---------------- */
 
 const TOOLS = [
   { name: "Figma", mark: "Fi", color: "text-[oklch(0.62_0.22_0)]" },
@@ -163,7 +163,7 @@ export function Tools() {
   );
 }
 
-/* ---------------- Selected Work ---------------- */
+/* ---------------- Projetos selecionados ---------------- */
 
 const PROJECTS = [
   { img: workFinova, title: "Finova – Aplicativo Financeiro", category: "Design de aplicativo mobile" },
@@ -215,7 +215,7 @@ export function Work() {
   );
 }
 
-/* ---------------- Process ---------------- */
+/* ---------------- Processo ---------------- */
 
 const STEPS = [
   { icon: Compass, n: "01", title: "Descobrir", copy: "Entender as necessidades dos usuários e os objetivos do projeto." },
