@@ -20,9 +20,9 @@ import { ArrowCircle, Reveal, SectionHeading } from "./shared";
 /* ---------------- About ---------------- */
 
 const STATS = [
-  { icon: Award, value: "5+", label: "Years Experience" },
-  { icon: Briefcase, value: "30+", label: "Projects Completed" },
-  { icon: Smile, value: "15+", label: "Happy Clients" },
+  { icon: Award, value: "5+", label: "Anos de experiência" },
+  { icon: Briefcase, value: "30+", label: "Projetos concluídos" },
+  { icon: Smile, value: "15+", label: "Clientes satisfeitos" },
 ];
 
 export function About() {
@@ -30,12 +30,12 @@ export function About() {
     <section id="about" className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal className="glass rounded-4xl p-6 sm:p-10">
         <SectionHeading
-          eyebrow="About me"
+          eyebrow="Sobre mim"
           title={
             <>
-              Designing with Empathy
+              Design com empatia
               <br />
-              Building with Purpose
+              Construindo com propósito
             </>
           }
         />
@@ -61,7 +61,7 @@ export function About() {
               href="#contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-5 py-3 text-[13px] font-semibold transition-colors hover:bg-background"
             >
-              More About Me <ArrowUpRight className="h-3.5 w-3.5" />
+              Mais sobre mim <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </div>
         </div>
@@ -76,26 +76,26 @@ const SERVICES = [
   {
     icon: Sparkles,
     tile: "bg-tile-orange",
-    title: "Product Design",
-    copy: "Designing intuitive and engaging user interfaces for web and mobile products.",
+    title: "Design de Produto",
+    copy: "Criação de interfaces intuitivas e envolventes para produtos web e mobile.",
   },
   {
     icon: PenTool,
     tile: "bg-tile-purple",
-    title: "UI/UX Design",
-    copy: "Creating seamless user experiences through research, wireframing and prototyping.",
+    title: "Design UI/UX",
+    copy: "Criação de experiências fluidas por meio de pesquisa, wireframes e prototipação.",
   },
   {
     icon: Layers,
     tile: "bg-tile-blue",
-    title: "Design Systems",
-    copy: "Building scalable design systems and component libraries for consistent experiences.",
+    title: "Sistemas de Design",
+    copy: "Construção de sistemas de design escaláveis e bibliotecas de componentes para experiências consistentes.",
   },
   {
     icon: Search,
     tile: "bg-tile-teal",
-    title: "User Research",
-    copy: "Understanding users deeply through research and data to inform better design.",
+    title: "Pesquisa com Usuários",
+    copy: "Entendimento profundo dos usuários por meio de pesquisa e dados para orientar melhores decisões de design.",
   },
 ];
 
@@ -103,7 +103,7 @@ export function Services() {
   return (
     <section id="services" className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal>
-        <SectionHeading eyebrow="What I do" title="Services I Offer" />
+        <SectionHeading eyebrow="O que eu faço" title="Serviços que ofereço" />
       </Reveal>
       <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {SERVICES.map(({ icon: Icon, tile, title, copy }, i) => (
@@ -142,7 +142,7 @@ export function Tools() {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal className="glass rounded-4xl p-6 sm:p-10">
-        <SectionHeading eyebrow="Tools & skills" title="Technologies I Use" />
+        <SectionHeading eyebrow="Ferramentas e habilidades" title="Tecnologias que uso" />
         <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
           {TOOLS.map((tool) => (
             <li
@@ -166,9 +166,9 @@ export function Tools() {
 /* ---------------- Selected Work ---------------- */
 
 const PROJECTS = [
-  { img: workFinova, title: "Finova – Finance App", category: "Mobile App Design" },
-  { img: workDashboard, title: "Analytics Dashboard", category: "Web Application" },
-  { img: workSaas, title: "SaaS Landing Page", category: "Web Design" },
+  { img: workFinova, title: "Finova – Aplicativo Financeiro", category: "Design de aplicativo mobile" },
+  { img: workDashboard, title: "Dashboard de Analytics", category: "Aplicação web" },
+  { img: workSaas, title: "Landing Page SaaS", category: "Design web" },
 ];
 
 export function Work() {
@@ -176,14 +176,14 @@ export function Work() {
     <section id="work" className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal>
         <SectionHeading
-          eyebrow="Featured projects"
-          title="Selected Work"
+          eyebrow="Projetos em destaque"
+          title="Projetos selecionados"
           action={
             <a
               href="#work"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-2.5 text-[13px] font-semibold transition-colors hover:bg-background"
             >
-              View All Projects <ArrowUpRight className="h-3.5 w-3.5" />
+              Ver todos os projetos <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           }
         />
@@ -194,7 +194,7 @@ export function Work() {
             <article className="glass glass-hover overflow-hidden rounded-3xl p-2">
               <img
                 src={project.img}
-                alt={`${project.title} preview`}
+                alt={`${project.title} prévia`}
                 width={1024}
                 height={768}
                 loading="lazy"
@@ -218,20 +218,20 @@ export function Work() {
 /* ---------------- Process ---------------- */
 
 const STEPS = [
-  { icon: Compass, n: "01", title: "Discover", copy: "Understanding user needs and project goals." },
-  { icon: Target, n: "02", title: "Define", copy: "Research, analyse and define the problem." },
+  { icon: Compass, n: "01", title: "Descobrir", copy: "Entender as necessidades dos usuários e os objetivos do projeto." },
+  { icon: Target, n: "02", title: "Definir", copy: "Pesquisar, analisar e definir o problema." },
   {
     icon: Lightbulb,
     n: "03",
-    title: "Ideate",
-    copy: "Brainstorm and create wireframes & concepts.",
+    title: "Idear",
+    copy: "Fazer brainstorming e criar wireframes e conceitos.",
   },
-  { icon: PenTool, n: "04", title: "Design", copy: "Crafting clean, intuitive user interfaces." },
+  { icon: PenTool, n: "04", title: "Projetar", copy: "Criar interfaces limpas e intuitivas." },
   {
     icon: Repeat,
     n: "05",
-    title: "Test & Iterate",
-    copy: "Testing with users and refining for the best experience.",
+    title: "Testar e Iterar",
+    copy: "Testar com usuários e refinar para obter a melhor experiência.",
   },
 ];
 
@@ -239,7 +239,7 @@ export function Process() {
   return (
     <section id="process" className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal className="glass rounded-4xl p-6 sm:p-10">
-        <SectionHeading eyebrow="My process" title="Design Process I Follow" />
+        <SectionHeading eyebrow="Meu processo" title="Processo de design que sigo" />
         <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {STEPS.map(({ icon: Icon, n, title, copy }, i) => (
             <li key={n} className="relative">
