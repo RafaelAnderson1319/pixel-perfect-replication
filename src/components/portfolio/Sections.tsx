@@ -11,7 +11,6 @@ import {
   Smile,
   Sparkles,
   Target,
-  Users,
 } from "lucide-react";
 import workFinova from "@/assets/work-finova.jpg";
 import workDashboard from "@/assets/work-dashboard.jpg";
@@ -273,5 +272,3 @@ export function Process() {
     </section>
   );
 }
-
-export { Users };
