@@ -19,7 +19,7 @@ export function Hero() {
               Aarav Singh
             </h1>
             <p className="text-gradient mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-              Digital Product Designer
+              Designer de Produto Digital
             </p>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
               I craft meaningful digital experiences that are intuitive, beautiful and built with
@@ -31,18 +31,18 @@ export function Hero() {
                 href="#work"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
               >
-                View My Work <ArrowUpRight className="h-4 w-4" />
+                Ver meus projetos <ArrowUpRight className="h-4 w-4" />
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-background"
               >
-                Download CV <Download className="h-4 w-4" />
+                Baixar currículo <Download className="h-4 w-4" />
               </a>
             </div>
 
             <div className="mt-10">
-              <p className="text-[11px] font-semibold text-muted-foreground">Trusted by</p>
+              <p className="text-[11px] font-semibold text-muted-foreground">Confiam no meu trabalho</p>
               <ul className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-3 opacity-45">
                 {TRUSTED.map((name) => (
                   <li key={name} className="text-lg font-semibold tracking-tight grayscale">
@@ -58,7 +58,7 @@ export function Hero() {
             <div className="glass-strong overflow-hidden rounded-4xl p-2">
               <img
                 src={portrait}
-                alt="Portrait of Aarav Singh"
+                alt="Retrato de Aarav Singh"
                 width={912}
                 height={1104}
                 className="h-full w-full rounded-[1.75rem] object-cover"
@@ -69,15 +69,15 @@ export function Hero() {
             <div className="glass-strong absolute -right-2 -top-4 rounded-2xl px-4 py-3 text-center sm:-right-6">
               <p className="text-gradient text-2xl font-extrabold leading-none">5+</p>
               <p className="mt-1 text-[10px] font-semibold leading-tight text-muted-foreground">
-                Years of
+                Anos de
                 <br />
-                Experience
+                Experiência
               </p>
             </div>
 
             {/* Design impact card */}
             <div className="glass-strong absolute -bottom-6 -right-2 w-40 rounded-2xl px-4 py-3 sm:-right-8">
-              <p className="text-[10px] font-semibold text-muted-foreground">Design Impact</p>
+              <p className="text-[10px] font-semibold text-muted-foreground">Impacto do design</p>
               <p className="text-base font-extrabold">+120%</p>
               <svg viewBox="0 0 100 32" className="mt-1 h-7 w-full" aria-hidden>
                 <path
