@@ -16,21 +16,21 @@ import { Orb, Reveal, SectionHeading } from "./shared";
 const TESTIMONIALS = [
   {
     quote:
-      "Aarav is an exceptional designer. He understands user needs deeply and delivers outstanding results on every project.",
+      "Aarav é um designer excepcional. Ele entende profundamente as necessidades dos usuários e entrega resultados excelentes em todos os projetos.",
     name: "Rohit Sharma",
     role: "Gerente de Produto, Google",
     initials: "RS",
   },
   {
     quote:
-      "Working with Aarav was a smooth and inspiring experience. His attention to detail is truly impressive.",
+      "Trabalhar com Aarav foi uma experiência tranquila e inspiradora. Sua atenção aos detalhes é realmente impressionante.",
     name: "Neha Verma",
     role: "Líder de Design, Microsoft",
     initials: "NV",
   },
   {
     quote:
-      "Aarav's designs not only look amazing but also solve real user problems. Highly recommended!",
+      "Os designs de Aarav não apenas são incríveis, mas também resolvem problemas reais dos usuários. Recomendo muito!",
     name: "Karan Malhotra",
     role: "Fundador, Startup",
     initials: "KM",
@@ -118,7 +118,7 @@ export function Contact() {
             <h2 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">
               Tem um projeto em mente?
               <br />
-              Let&apos;s create something amazing together.
+              Vamos criar algo incrível juntos.
             </h2>
             <ul className="mt-8 grid gap-4">
               {CONTACTS.map(({ icon: Icon, value }) => (
@@ -160,7 +160,7 @@ export function Contact() {
               defaultValue=""
               className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-xs text-muted-foreground outline-none focus:ring-2 focus:ring-ring"
             >
-              <option value="">Your Project</option>
+              <option value="">Seu projeto</option>
               <option>Design de Produto</option>
               <option>Design UI/UX</option>
               <option>Sistema de Design</option>
