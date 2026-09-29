@@ -4,9 +4,9 @@ import { Hero } from "@/components/portfolio/Hero";
 import { About, Process, Services, Tools, Work } from "@/components/portfolio/Sections";
 import { Contact, Footer, Testimonials } from "@/components/portfolio/Closing";
 
-const TITLE = "Aarav Singh — Digital Product Designer";
+const TITLE = "Aarav Singh — Designer de Produto Digital";
 const DESCRIPTION =
-  "Portfolio of Aarav Singh, a digital product designer crafting intuitive, beautiful product experiences for web and mobile.";
+  "Portfólio de Aarav Singh, designer de produto digital criando experiências intuitivas e bonitas para web e mobile.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
