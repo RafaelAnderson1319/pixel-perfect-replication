@@ -3,13 +3,13 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Início", href: "#home" },
+  { label: "Sobre", href: "#about" },
+  { label: "Serviços", href: "#services" },
+  { label: "Projetos", href: "#work" },
+  { label: "Processo", href: "#process" },
+  { label: "Depoimentos", href: "#testimonials" },
+  { label: "Contato", href: "#contact" },
 ];
 
 export function Logo({ className }: { className?: string }) {
@@ -38,7 +38,7 @@ export function Navbar() {
           <span className="min-w-0">
             <span className="block truncate text-sm font-bold leading-tight">Aarav Singh</span>
             <span className="block truncate text-[11px] text-muted-foreground">
-              Digital Product Designer
+              Designer de Produto Digital
             </span>
           </span>
         </a>
@@ -71,7 +71,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
             aria-expanded={open}
             className="grid h-10 w-10 place-items-center rounded-full border border-border bg-secondary lg:hidden"
           >
