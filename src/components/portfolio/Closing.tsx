@@ -18,21 +18,21 @@ const TESTIMONIALS = [
     quote:
       "Aarav is an exceptional designer. He understands user needs deeply and delivers outstanding results on every project.",
     name: "Rohit Sharma",
-    role: "Product Manager, Google",
+    role: "Gerente de Produto, Google",
     initials: "RS",
   },
   {
     quote:
       "Working with Aarav was a smooth and inspiring experience. His attention to detail is truly impressive.",
     name: "Neha Verma",
-    role: "Design Lead, Microsoft",
+    role: "Líder de Design, Microsoft",
     initials: "NV",
   },
   {
     quote:
       "Aarav's designs not only look amazing but also solve real user problems. Highly recommended!",
     name: "Karan Malhotra",
-    role: "Founder, Startup",
+    role: "Fundador, Startup",
     initials: "KM",
   },
 ];
@@ -46,13 +46,13 @@ export function Testimonials() {
     <section id="testimonials" className="mx-auto w-full max-w-6xl px-4 pt-16">
       <Reveal className="glass rounded-4xl p-6 sm:p-10">
         <SectionHeading
-          eyebrow="Testimonials"
-          title="What Clients Say"
+          eyebrow="Depoimentos"
+          title="O que os clientes dizem"
           action={
             <div className="flex gap-2">
               <button
                 type="button"
-                aria-label="Previous testimonial"
+                aria-label="Depoimento anterior"
                 onClick={() => setStart((s) => (s - 1 + total) % total)}
                 className="grid h-9 w-9 place-items-center rounded-full border border-border bg-secondary transition-colors hover:bg-background"
               >
@@ -60,7 +60,7 @@ export function Testimonials() {
               </button>
               <button
                 type="button"
-                aria-label="Next testimonial"
+                aria-label="Próximo depoimento"
                 onClick={() => setStart((s) => (s + 1) % total)}
                 className="grid h-9 w-9 place-items-center rounded-full border border-border bg-secondary transition-colors hover:bg-background"
               >
@@ -116,7 +116,7 @@ export function Contact() {
           <div className="min-w-0">
             <p className="label-eyebrow">Let&apos;s connect</p>
             <h2 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">
-              Have a project in mind?
+              Tem um projeto em mente?
               <br />
               Let&apos;s create something amazing together.
             </h2>
@@ -144,14 +144,14 @@ export function Contact() {
               <input
                 required
                 name="name"
-                placeholder="Your Name"
+                placeholder="Seu nome"
                 className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-xs outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-ring"
               />
               <input
                 required
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Seu e-mail"
                 className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-xs outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-ring"
               />
             </div>
@@ -161,27 +161,27 @@ export function Contact() {
               className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-xs text-muted-foreground outline-none focus:ring-2 focus:ring-ring"
             >
               <option value="">Your Project</option>
-              <option>Product Design</option>
-              <option>UI/UX Design</option>
-              <option>Design System</option>
-              <option>User Research</option>
+              <option>Design de Produto</option>
+              <option>Design UI/UX</option>
+              <option>Sistema de Design</option>
+              <option>Pesquisa com Usuários</option>
             </select>
             <textarea
               required
               name="message"
               rows={5}
-              placeholder="Your Message"
+              placeholder="Sua mensagem"
               className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-xs outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-ring"
             />
             <button
               type="submit"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
-              Send Message <Send className="h-4 w-4" />
+              Enviar mensagem <Send className="h-4 w-4" />
             </button>
             {sent && (
               <p className="text-center text-[11px] font-medium text-[var(--violet)]">
-                Thanks! Your message has been noted.
+                Obrigado! Sua mensagem foi registrada.
               </p>
             )}
           </form>
