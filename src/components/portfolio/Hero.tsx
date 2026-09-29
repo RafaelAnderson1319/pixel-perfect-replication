@@ -14,7 +14,7 @@ export function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr]">
           {/* Copy */}
           <Reveal className="min-w-0">
-            <p className="label-eyebrow">Hello, I&apos;m</p>
+            <p className="label-eyebrow">Olá, eu sou</p>
             <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
               Aarav Singh
             </h1>
@@ -65,7 +65,7 @@ export function Hero() {
               />
             </div>
 
-            {/* 5+ years card */}
+            {/* card de 5+ anos */}
             <div className="glass-strong absolute -right-2 -top-4 rounded-2xl px-4 py-3 text-center sm:-right-6">
               <p className="text-gradient text-2xl font-extrabold leading-none">5+</p>
               <p className="mt-1 text-[10px] font-semibold leading-tight text-muted-foreground">
@@ -75,7 +75,7 @@ export function Hero() {
               </p>
             </div>
 
-            {/* Design impact card */}
+            {/* card de impacto do design */}
             <div className="glass-strong absolute -bottom-6 -right-2 w-40 rounded-2xl px-4 py-3 sm:-right-8">
               <p className="text-[10px] font-semibold text-muted-foreground">Impacto do design</p>
               <p className="text-base font-extrabold">+120%</p>
