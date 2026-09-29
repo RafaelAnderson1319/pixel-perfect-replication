@@ -41,7 +41,7 @@ const TESTIMONIALS = [
 export function Testimonials() {
   const [start, setStart] = useState(0);
   const total = TESTIMONIALS.length;
-  const visible = [0, 1, 2].map((offset) => TESTIMONIALS[(start + offset) % total]);
+  const visible = [0, 1, 2].map((offset) => TESTIMONIALS[(start + offset) % total]!);
 
   return (
     <section id="testimonials" className="mx-auto w-full max-w-6xl px-4 pt-16">
