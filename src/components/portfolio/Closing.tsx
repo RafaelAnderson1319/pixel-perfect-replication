@@ -8,7 +8,6 @@ import {
   Quote,
   Send,
 } from "lucide-react";
-import { toast } from "sonner";
 import { Logo } from "./Navbar";
 import { Orb, Reveal, SectionHeading } from "./shared";
 
@@ -107,6 +106,8 @@ const CONTACTS = [
 ];
 
 export function Contact() {
+  const [sent, setSent] = useState(false);
+
   return (
     <section id="contact" className="relative mx-auto w-full max-w-6xl px-4 pt-16">
       <Orb className="-bottom-10 right-0 h-72 w-72 bg-[oklch(0.78_0.12_300)]" />
@@ -136,7 +137,7 @@ export function Contact() {
             onSubmit={(event) => {
               event.preventDefault();
               event.currentTarget.reset();
-              toast.success("Thanks! Your message has been noted.");
+              setSent(true);
             }}
           >
             <div className="grid gap-3 sm:grid-cols-2">
@@ -178,6 +179,11 @@ export function Contact() {
             >
               Send Message <Send className="h-4 w-4" />
             </button>
+            {sent && (
+              <p className="text-center text-[11px] font-medium text-[var(--violet)]">
+                Thanks! Your message has been noted.
+              </p>
+            )}
           </form>
         </div>
       </Reveal>
